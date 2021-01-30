@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journalposts",
+  "info": {
+    "name": "journalpost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "json"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "timeToRead": {
+      "type": "string"
+    }
+  }
+}

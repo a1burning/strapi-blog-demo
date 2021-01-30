@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/journalposts",
+      "handler": "journalpost.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journalposts/count",
+      "handler": "journalpost.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journalposts/:id",
+      "handler": "journalpost.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/journalposts",
+      "handler": "journalpost.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/journalposts/:id",
+      "handler": "journalpost.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/journalposts/:id",
+      "handler": "journalpost.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

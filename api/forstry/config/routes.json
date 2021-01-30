@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/forstry",
+      "handler": "forstry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/forstry",
+      "handler": "forstry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/forstry",
+      "handler": "forstry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

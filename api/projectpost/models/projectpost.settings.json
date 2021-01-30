@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projectposts",
+  "info": {
+    "name": "projectpost",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "bgColor": {
+      "type": "string",
+      "required": false
+    },
+    "fontColor": {
+      "type": "string",
+      "required": false
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "categories": {
+      "collection": "catepory",
+      "via": "projectposts"
+    }
+  }
+}

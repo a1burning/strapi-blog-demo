@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catepories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "projectposts": {
+      "via": "categories",
+      "collection": "projectpost",
+      "dominant": true
+    }
+  }
+}

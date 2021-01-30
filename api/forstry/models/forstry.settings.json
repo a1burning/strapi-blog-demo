@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "forstries",
+  "info": {
+    "name": "forstry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Welcome ~"
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

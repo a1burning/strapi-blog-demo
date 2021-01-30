@@ -16,6 +16,10 @@ module.exports = ({ env }) => ({
         // 账户密码
         password: env('DATABASE_PASSWORD', 'Gudan1beizi.+.'),
       },
+      // settings: {
+      //   client: 'sqlite',
+      //   filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+      // },
       options: {},
     },
   },

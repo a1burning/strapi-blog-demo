@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "say_his",
+  "info": {
+    "name": "sayHi"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

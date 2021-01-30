@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/say-his",
+      "handler": "say-hi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/say-his/count",
+      "handler": "say-hi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/say-his/:id",
+      "handler": "say-hi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/say-his",
+      "handler": "say-hi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/say-his/:id",
+      "handler": "say-hi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/say-his/:id",
+      "handler": "say-hi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
